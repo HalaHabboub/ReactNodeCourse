@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<script>
+    "use strict";
+
+    //ARROW FUNCTIONS ASSIGNMENT - HALA HABBOUB - 22110029
+    //PART 1 --------------------------------------------------------------------------------------------------------
+    /*
+    QUESTION 1: 
+        What is an arrow function in JavaScript and how does its syntax differ from a regular function expression?
+    ANSWER: 
+        An arrow function is a shorter syntax for writing function expressions. 
+        It uses the "=>" syntax to return values 
+        and does not have its own "this" context.
+    */
+
+    /*
+    QUESTION 2: 
+        In what circumstances can you omit the parentheses around the parameter list? Provide an example.
+    ANSWER:
+        When there is only one parameter, you can omit the parentheses.
+    */
+    let increment = b => b + 1
+    alert("increment: " + increment(2))
+
+    /*
+    QUESTION 3: 
+        Create an arrow function with three parameters and a multiline body that calculates the average of the three numbers.
+    ANSWER:
+    */
+    let average = (a, b, c) => {
+        let sum = a + b + c;
+        let avg = sum / 3;
+        return avg;
+    }
+
+    alert("Average: " + average(1, 2, 3)); //should return 2
+
+
+    //PART 2 --------------------------------------------------------------------------------------------------------
+    /*
+    function isPositive(num) {
+        return num > 0;
+    }
+    */
+    let isPositive = (num) => num > 0;
+
+
+    /*
+    function greet(name) {
+        return "Hello, " + name + "!";
+    }
+    */
+    let greet = (name) => "Hello, " + name + "!";
+
+
+    /*
+     function randomNumber() {
+         return Math.random();
+     }
+     */
+    let randomNumber = () => Math.random();
+
+
+
+
+</script>
