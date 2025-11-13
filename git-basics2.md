@@ -180,6 +180,44 @@ branchName  →  [Pull Request]  →  main
 
 ---
 
+## Keeping Your Branch Updated
+
+### After Creating a Branch: Pull Regularly
+
+Once you create a branch and start working, **other team members** might merge their changes into `main`. Your branch won't automatically get these updates.
+
+**Why pull?**
+- Your branch becomes **outdated** compared to `main`
+- You might face **merge conflicts** later if you don't stay updated
+- Ensures your work is **compatible** with the latest code
+
+### How to Update Your Branch:
+
+```bash
+# 1. Switch to main branch
+git checkout main
+
+# 2. Pull latest changes from remote
+git pull origin main
+
+# 3. Switch back to your branch
+git checkout branchName
+
+# 4. Merge main into your branch
+git merge main
+```
+
+**Or use this shortcut while on your branch:**
+```bash
+git pull origin main
+```
+
+This pulls the latest `main` branch changes and merges them into your current branch.
+
+**Best practice:** Pull from `main` regularly (daily or before starting new work) to avoid large conflicts.
+
+---
+
 ## After Merging: Branch Deletion
 
 After a successful merge, you can delete the branch to keep the repository clean.
